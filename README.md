@@ -21,10 +21,13 @@ Atualmente:
 - ✅ Estrutura HTML criada;
 - ✅ Layout inicial desenvolvido;
 - ✅ Estilização com CSS;
-- ✅ Identidade visual criada.
+- ✅ Identidade visual criada;
+- ✅ Botão de pause funcional;
+- ✅ Barra de progressão;
+- ✅ Barra de volume;
 
 Próximas implementações:
-- [ ] Player funcional;
+- [ ] Player totalmente funcional;
 - [ ] Troca de músicas;
 - [ ] Controles de reprodução;
 - [ ] Responsividade;
@@ -35,7 +38,7 @@ Próximas implementações:
 - HTML5
 - CSS3
 - Google Fonts
-- Futuramente: JavaScript
+- JavaScript
 
 ## 🎨 Conceito visual
 
