@@ -1,7 +1,6 @@
-console.log("Player started");
-
 const music = document.getElementById("music");
 const btnPause = document.getElementById("pause");
+const background = document.querySelector(".background");
 
 let tocando = true;
 
@@ -10,10 +9,12 @@ btnPause.addEventListener("click", () => {
         btnPause.innerHTML = "▶";
         music.pause();
         tocando = true;
+        background.style.opacity = "0";
     } else{
         btnPause.innerHTML = "⏸";
         music.play();
         tocando = false;
+        background.style.opacity = "0.55";
     }
 });
 
