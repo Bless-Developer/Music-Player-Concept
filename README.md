@@ -8,7 +8,6 @@ Este projeto nasceu da vontade de unir programação e música em uma única exp
 
 A proposta é criar uma página onde cada música possui sua própria identidade, reunindo:
 - capa da música;
-- informações do artista;
 - um player interativo;
 - uma história pessoal relacionada àquela obra.
 
