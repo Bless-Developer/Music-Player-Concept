@@ -15,7 +15,7 @@ O projeto está sendo desenvolvido para praticar e aprimorar conhecimentos em HT
 
 ## 🚧 Estado do projeto
 
-Versão 0.3.1
+Versão 0.5
 
 Atualmente:
 - ✅ Estrutura HTML criada;
