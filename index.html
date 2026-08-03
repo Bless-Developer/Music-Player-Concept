@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player Concept</title>
-    <link rel="icon" href="./img/page-icon.png" type="image/png">
+    <link rel="icon" href="./img/icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,11 @@
     <main>
 
         <div class="player">
-            <img src="./img/human.jpg" alt="Human - Flavor Foley" class="album-cover">
-            <h1>Human - Flavor Foley</h1>
+            <img id="cover" class="album-cover" alt="Capa do Álbum">
+            <h1 id="title"></h1>
+            <h5 id="artist"></h5>
             <audio id="music">
-                <source src="./songs/Human.mp3" type="audio/mpeg">
+                <source id="song" type="audio/mpeg">
             </audio>
 
             <div class="container-barra">
@@ -29,9 +30,9 @@
             </div>
 
             <div class="controls">
-                <button class="btn-player">⏮</button>
+                <button id="prev" class="btn-player">⏮</button>
                 <button id="pause" class="btn-player">▶</button>
-                <button class="btn-player">⏭</button>
+                <button id="next" class="btn-player">⏭</button>
 
                 <div class="volume">
                     <input 
@@ -48,8 +49,8 @@
         </div>
 
         <div class="story">
-            <h1 class="year">2026 - Mudanças</h1>
-            <p>Essa música acompanhou diversas mudanças na minha vida, desde aceitação até compreensão de quem sou. <br> </p>
+            <h1  id="year" class="year"></h1>
+            <p  id="story"></p>
         </div>
 
     </main>

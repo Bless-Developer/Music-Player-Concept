@@ -25,10 +25,10 @@ Atualmente:
 - ✅ Botão de pause funcional;
 - ✅ Barra de progressão;
 - ✅ Barra de volume;
+- ✅ Player totalmente funcional;
+- ✅ Troca de músicas;
 
 Próximas implementações:
-- [ ] Player totalmente funcional;
-- [ ] Troca de músicas;
 - [ ] Controles de reprodução;
 - [ ] Responsividade;
 - [ ] Melhorias de acessibilidade.

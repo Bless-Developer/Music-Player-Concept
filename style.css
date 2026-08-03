@@ -31,13 +31,32 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(163, 150, 150);
+
+    transition: 0.5s;
+}
+
+body.human{
+    background-color: rgb(88, 88, 88);
+}
+
+body.human .player, body.human .story, body.human footer{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+body.machinelove{
+    background-color: rgb(65, 54, 54);
+}
+
+body.machinelove .player, body.machinelove .story, body.machinelove footer{
+    background-color: rgba(255, 202, 202, 0.3);
 }
 
 .player, .story{
     background: rgba(255, 255, 255, 0.3);
     width: 40%;
     text-align: center;
+
+    transition: 0.5s;
 
     backdrop-filter: blur(15px);
 }  
@@ -53,7 +72,13 @@ body{
 
 .player h1{
     font-family: "Fjalla One", sans-serif;
-    margin: 20px 0;
+    font-size: clamp(2rem, 5vw, 90px);
+    margin: 20px 0px 0px 0px;
+}
+
+.player h5{
+    font-family: "Fjalla One", sans-serif;
+    font-size: 36px;
 }
 
 .player .album-cover{
@@ -159,6 +184,8 @@ footer{
 
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(15px);
+
+    transition: 0.5s;
 }
 
 footer a{
@@ -169,5 +196,5 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
-    color: rgb(200, 200, 200);
+    color: rgb(0, 0, 200);
 }

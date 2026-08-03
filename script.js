@@ -1,20 +1,82 @@
+let songs = [];
+let currentSong = 0;
+
+async function playSongs() {
+    const response = await fetch("./data/musics.json");
+    songs = await response.json();    
+
+
+    console.log(songs);
+
+    loadMusic(songs[0]);
+};
+
+
+
 const music = document.getElementById("music");
 const btnPause = document.getElementById("pause");
+const btnNext = document.getElementById("next");
+const btnPrev = document.getElementById("prev");
+
+
+const body = document.body;
 const background = document.querySelector(".background");
 
-let tocando = true;
+const cover = document.getElementById("cover");
+const title = document.getElementById("title");
+const artist = document.getElementById("artist");
+const audioSource = document.getElementById("song");
+const year = document.getElementById("year");
+const story = document.getElementById("story");
+
+function loadMusic(songData){
+
+    cover.src = songData.cover;
+    title.textContent = songData.title;
+    artist.textContent = songData.artist;
+    audioSource.src = songData.song;
+    year.textContent = songData.year;
+    story.textContent = songData.story;
+
+
+    body.className = "";
+    body.classList.add(songData.theme);
+    background.style.backgroundImage = `url(${songData.background})`;
+
+    music.load();
+}
+
+function nextMusic(){
+    currentSong++;
+
+    if (currentSong >= songs.length){
+        currentSong = 0;
+    }
+
+    loadMusic(songs[currentSong]);
+};
+
+function prevMusic(){
+    currentSong --
+
+    if (currentSong < 0){
+        currentSong = songs.length - 1;
+    }
+
+    loadMusic(songs[currentSong]);
+}
 
 btnPause.addEventListener("click", () => {
-    if (tocando === false){
-        btnPause.innerHTML = "▶";
-        music.pause();
-        tocando = true;
-        background.style.opacity = "0";
-    } else{
+    if (music.paused){
         btnPause.innerHTML = "⏸";
         music.play();
-        tocando = false;
-        background.style.opacity = "0.55";
+        console.log("INICIOU");
+        background.style.opacity = "0.35";
+    } else{
+        btnPause.innerHTML = "▶";
+        music.pause();
+             console.log("PAUSOU")
+        background.style.opacity = "0";
     }
 });
 
@@ -31,4 +93,14 @@ const volume = document.getElementById("volume");
 
 volume.addEventListener("input", () =>{
     music.volume = volume.value;
+});
+
+playSongs();
+
+btnNext.addEventListener("click", () => {
+    nextMusic();
+});
+
+btnPrev.addEventListener("click", () => {
+    prevMusic();
 });

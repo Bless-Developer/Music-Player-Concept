@@ -1,0 +1,40 @@
+[
+    {
+        "title": "Human",
+
+        "song": "./songs/Human.mp3",
+
+        "artist": "Flavor Foley",
+
+        "cover": "./img/Human/human.jpg",
+
+        "background": "./img/Human/human-bg.gif",
+
+        "theme": "human",
+
+        "year": "2026",
+
+        "story": "Essa música acompanhou diversas mudanças na minha vida, desde a aceitação até a compreensão de quem sou."
+
+    },
+    
+    {
+        "title": "Machine Love",
+
+        "song": "./songs/Machine Love.mp3",
+
+        "artist": "Jamie Paige",
+
+        "cover": "./img/MachineLove/machinelove.jpg",
+
+        "background": "./img/MachineLove/machinelove-bg.gif",
+
+        "theme": "machinelove",
+
+        "year": "2025",
+
+        "story": "Essa música trilhou uma das piores épocas da minha vida ao meu lado."
+    }
+
+]
+
