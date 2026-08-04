@@ -135,6 +135,12 @@ body.machinelove .player, body.machinelove .story, body.machinelove footer{
     overflow: hidden;
 
     cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.container-barra:hover{
+    height: 20px;
 }
 
 #barra-prog{
@@ -162,10 +168,18 @@ body.machinelove .player, body.machinelove .story, body.machinelove footer{
     cursor: pointer;
 }
 
+
+
 #volume::-webkit-slider-runnable-track{
     height: 8px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 999px;
+
+    transition: 0.2s;
+}
+
+#volume::-webkit-slider-runnable-track:hover{
+    height: 10px;
 }
 
 #volume::-webkit-slider-thumb{
@@ -176,7 +190,7 @@ body.machinelove .player, body.machinelove .story, body.machinelove footer{
     border-radius: 50%;
     background-color: rgba(0, 0, 0);
 
-    margin-top: -5px;   
+    margin-top: -4px;   
 }
 
 footer{
