@@ -18,6 +18,8 @@ const btnPause = document.getElementById("pause");
 const btnNext = document.getElementById("next");
 const btnPrev = document.getElementById("prev");
 
+const containerBarra = document.querySelector(".container-barra");
+
 
 const body = document.body;
 const background = document.querySelector(".background");
@@ -47,6 +49,7 @@ function loadMusic(songData){
 }
 
 function nextMusic(){
+    const isPlaying = !music.paused;
     currentSong++;
 
     if (currentSong >= songs.length){
@@ -54,9 +57,14 @@ function nextMusic(){
     }
 
     loadMusic(songs[currentSong]);
+
+    if (isPlaying){
+        music.play();
+    };
 };
 
 function prevMusic(){
+    const isPlaying = !music.paused;
     currentSong --
 
     if (currentSong < 0){
@@ -64,6 +72,10 @@ function prevMusic(){
     }
 
     loadMusic(songs[currentSong]);
+
+    if (isPlaying){
+        music.play();
+    };
 }
 
 btnPause.addEventListener("click", () => {
@@ -104,3 +116,11 @@ btnNext.addEventListener("click", () => {
 btnPrev.addEventListener("click", () => {
     prevMusic();
 });
+
+containerBarra.addEventListener("click", (e) => {
+    const width = containerBarra.clientWidth;
+    const clickX = e.offsetX;
+    const duration = music.duration;
+
+    music.currentTime = (clickX / width) * duration;
+})

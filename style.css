@@ -125,7 +125,7 @@ body.machinelove .player, body.machinelove .story, body.machinelove footer{
 
 .container-barra{
     width: 80%;
-    height: 5px;
+    height: 9px;
 
     margin: 20px auto;
     background-color: rgba(0, 0, 0, 0.3);
@@ -133,6 +133,8 @@ body.machinelove .player, body.machinelove .story, body.machinelove footer{
     border-radius: 10px;
 
     overflow: hidden;
+
+    cursor: pointer;
 }
 
 #barra-prog{

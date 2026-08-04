@@ -15,7 +15,7 @@ O projeto está sendo desenvolvido para praticar e aprimorar conhecimentos em HT
 
 ## 🚧 Estado do projeto
 
-Versão 0.3.1
+Versão 0.5.1
 
 Atualmente:
 - ✅ Estrutura HTML criada;
@@ -27,9 +27,9 @@ Atualmente:
 - ✅ Barra de volume;
 - ✅ Player totalmente funcional;
 - ✅ Troca de músicas;
+- ✅ Controles de reprodução;
 
 Próximas implementações:
-- [ ] Controles de reprodução;
 - [ ] Responsividade;
 - [ ] Melhorias de acessibilidade.
 
